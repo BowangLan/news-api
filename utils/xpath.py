@@ -19,6 +19,10 @@ class XpathField():
             return t[0]
         return t
 
+    def extract_from_html(self, html: str):
+        root = lxml.html.fromstring(html)
+        return self.extract(root)
+
 
 class XPathParser(object):
 
