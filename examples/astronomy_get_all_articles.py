@@ -6,6 +6,7 @@ from rich import print
 async def main():
     url = "https://www.astronomy.com/science/stars/"
     astronomy_client = AstronomyClient()
+    # astronomy_client = AstronomyClient()
     topics = await astronomy_client.get_topic_articles(url)
     print(topics)
 

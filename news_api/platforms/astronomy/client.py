@@ -1,4 +1,3 @@
-import httpx
 from utils.xpath import *
 from utils.BaseClient import BaseClient
 from rich import print
